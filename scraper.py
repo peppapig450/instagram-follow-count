@@ -1,13 +1,16 @@
-# Get instance
 import instaloader
 from dotenv import load_dotenv
 import os
+import sys
 
+# Get instance
 loader = instaloader.Instaloader()
 
-# get .env file
-cwd = os.getcwd()
-env_path = os.path.join(cwd, '.env')
+# get relative path of .env file
+env_path = os.path.join(os.getcwd(), '.env')
+
+# get user to get follow count of
+target = ' '.join(sys.argv[1:])
 
 # load secrets from file
 load_dotenv(env_path)
@@ -26,7 +29,7 @@ proxies = {
 loader.login(login_name, psswd, proxies)
 
 # Obtain profile metadata
-profile = instaloader.Profile.from_username(loader.context, "nordv2")
+profile = instaloader.Profile.from_username(loader.context, target)
 
 # print out follower count
 print(profile.followers)

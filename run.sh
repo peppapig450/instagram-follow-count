@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 set -Eeuo pipefail
 
 # get path of bash script
@@ -20,4 +20,4 @@ oldfoll=$(run) \
 && sleep 70
 newfoll=$(run)
 
-echo "$((newfoll - oldfoll)) is the followers gained in one minute"
+echo "$((newfoll - oldfoll)) followers gained in one minute"

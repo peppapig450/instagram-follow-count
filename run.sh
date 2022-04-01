@@ -7,8 +7,10 @@ SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 # source virtual environment
 source "${SCRIPT_DIR}/venv/bin/activate"
 
+arg="$1"
+
 function run() {
-    python3.9 scraper.py nordv2
+    python3.9 scraper.py "$arg"
 }
 typeset -fx run
 

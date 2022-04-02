@@ -2,10 +2,10 @@
 
 Get a users instagram follower count using instaloader and tor.
 
+
 This means that you have to have a working tor proxy.
 
-You can install tor on macOS with [brew](https://brew.sh)
-
+You can install tor on macOS with [brew](https://brew.sh)  
 Assuming you have brew already setup you can do:
 ```shell
 brew install tor
@@ -25,5 +25,5 @@ pip install -r requirements.txt
 
 #### Login Credentials
 Put your login info for Instagram into the `.env` file using this format
-> login_name="*your username*"
+> login_name="*your username*"  
 > psswd="*your password*"

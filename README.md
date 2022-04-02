@@ -5,6 +5,7 @@ Get a users instagram follower count using instaloader and tor.
 This means that you have to have a working tor proxy.
 
 You can install tor on macOS with [brew](https://brew.sh)
+
 Assuming you have brew already setup you can do:
 ```shell
 brew install tor

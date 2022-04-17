@@ -1,7 +1,6 @@
-# Instagram Followers Scrape
+# Instagram Followers Scripts
 
-Get a users instagram follower count using instaloader and tor.
-
+A collection of python scripts that involve monitoring a user or multiple users followers on Instagram.
 
 This means that you have to have a working tor proxy.
 
